@@ -68,24 +68,3 @@ app.use((req, res, next) => {
     log(`serving on port ${port}`);
   });
 })();
-import express from 'express';
-import path from 'path';
-import cors from 'cors';
-
-const app = express();
-app.use(cors());
-app.use(express.json());
-
-const PORT = process.env.PORT || 3000;
-
-// Serve static frontend files
-app.use(express.static(path.join(__dirname, '../client/dist')));
-
-// Fallback to index.html for client-side routing
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/dist/index.html'));
-});
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
