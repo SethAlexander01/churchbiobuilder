@@ -1,5 +1,5 @@
 // Update the import path below to the correct relative path where your schema is located, for example:
-import { users, type User, type InsertUser } from "../../shared/schema.js";
+import { users, type User, type InsertUser } from "@shared/schema.js";
 
 
 // modify the interface with any CRUD methods

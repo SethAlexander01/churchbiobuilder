@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "cross-env NODE_ENV=development tsx index.ts",
-    "start": "node --experimental-specifier-resolution=node dist/server/src/index.js",
+    "start": "node --experimental-specifier-resolution=node dist/index.js",
     "build": "tsc"
   },
   "keywords": [],

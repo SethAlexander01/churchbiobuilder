@@ -8,7 +8,7 @@
       "@shared/*": ["../shared/*"]
     },
     "rootDir": "..",
-    "outDir": "../dist",
+   "outDir": "../dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
