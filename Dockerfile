@@ -1,5 +1,5 @@
 # Stage 1: Build client and server
-FROM node:18 AS builder
+FROM node:20 AS builder
 
 WORKDIR /app
 
@@ -12,9 +12,8 @@ RUN npm install
 # Build both client and server
 RUN npm run build --workspace=client && npm run build --workspace=server
 
-
 # Stage 2: Run the server
-FROM node:18
+FROM node:20
 
 WORKDIR /app
 
